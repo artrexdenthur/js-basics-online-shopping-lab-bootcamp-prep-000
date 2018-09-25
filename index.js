@@ -43,6 +43,10 @@ function viewCart() {
 function total() {
   // iterate through the cart and return
   // the total value of the items therein
+  let total = 0;
+  for(let item of cart) {
+    total += item.itemPrice;
+  }
   
 }
 
