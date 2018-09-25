@@ -69,5 +69,7 @@ function removeFromCart(removeName) {
 
 function placeOrder(cardNumber) {
   // check for no argument
-  if placeOrder.arguments.length == 0
+  if(placeOrder.arguments.length === 0) {
+    
+  }
 }
