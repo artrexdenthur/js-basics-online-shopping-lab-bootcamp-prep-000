@@ -25,7 +25,16 @@ function viewCart() {
   // in this format:
   // "In your cart, you have bananas at $17, pancake batter at $5,
   // and eggs at $49"
-  for(let i = 0; i < length(cart))
+  let statement = `In your cart, you have `;
+  if cart.length < 1 {
+    return "Your shopping cart is empty."
+  } else {
+    statement = statement + `${
+  }
+  for(let i = 0; i < cart.length; i++) {
+    
+    statement = statement + 
+  }
 }
 
 function total() {
