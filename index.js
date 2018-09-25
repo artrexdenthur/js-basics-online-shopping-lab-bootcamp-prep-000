@@ -68,5 +68,6 @@ function removeFromCart(removeName) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  // check for no argument
+  
 }
