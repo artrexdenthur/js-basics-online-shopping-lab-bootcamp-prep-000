@@ -56,7 +56,7 @@ function removeFromCart(removeName) {
   // write your code here
   let removed = false;
   for(let item of cart) {
-    if(item.itemName === itemName) {
+    if(item.itemName === removeName) {
       let index = cart.indexOf(item);
       cart.splice(index, 1);
       removed = true;
