@@ -13,8 +13,8 @@ function addToCart(itemName) {
   // The item will be an object with a name and a price
   // Generate a random price between 1 and 100:
   itemPrice = math.floor(math.random() * 100) + 1;
-  // return the object
-  return { itemName, itemPrice };
+  // add the object to the cart
+  cart.push( { itemName, itemPrice } );
 }
 
 function viewCart() {
