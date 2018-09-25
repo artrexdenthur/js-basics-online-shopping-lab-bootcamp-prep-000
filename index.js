@@ -27,14 +27,14 @@ function viewCart() {
   // and eggs at $49"
   let statement = `In your cart, you have `;
   if(cart.length < 1) {
-    return "Your shopping cart is empty."
+    return "Your shopping cart is empty.";
   } else {
-    statement = statement + `${cart[0].itemName} at $${cart[0].itemPrice}`
+    statement = statement + `${cart[0].itemName} at $${cart[0].itemPrice}`;
     for(let i = 1; i < cart.length; i++) {
       if(i < cart.length) {
-        statement = `${statement}, ${cart[i].itemName} at $${cart[i].itemPrice}`  
+        statement = `${statement}, ${cart[i].itemName} at $${cart[i].itemPrice}`  ;
       } else {
-        statement = `${statement}, and ${cart[i].itemName} at $${cart[i].itemPrice}`
+        statement = `${statement}, and ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
     }
   }
@@ -74,6 +74,6 @@ function placeOrder(cardNumber) {
   } else {
     let total = total(cart);
     cart = [];
-    return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`
+    return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`;
   }
 }
