@@ -41,7 +41,9 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  // iterate through the cart and return
+  // the total value of the items therein
+  
 }
 
 function removeFromCart(item) {
