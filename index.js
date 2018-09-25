@@ -50,7 +50,7 @@ function total() {
   return total;
 }
 
-function removeFromCart(itemName) {
+function removeFromCart(removeName) {
   // write your code here
   for(let item of cart) {
     if(item.itemName === itemName) {
