@@ -50,8 +50,13 @@ function total() {
   return total;
 }
 
-function removeFromCart(item) {
+function removeFromCart(itemName) {
   // write your code here
+  for(let item of cart) {
+    if(item.itemName === itemName) {
+      
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
