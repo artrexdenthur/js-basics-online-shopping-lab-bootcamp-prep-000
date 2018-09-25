@@ -31,7 +31,7 @@ function viewCart() {
   } else {
     statement = statement + `${cart[0].itemName} at $${cart[0].itemPrice}`;
     for(let i = 1; i < cart.length; i++) {
-      if(i < cart.length) {
+      if(i < cart.length - 1) {
         statement = `${statement}, ${cart[i].itemName} at $${cart[i].itemPrice}`  ;
       } else {
         statement = `${statement}, and ${cart[i].itemName} at $${cart[i].itemPrice}`;
