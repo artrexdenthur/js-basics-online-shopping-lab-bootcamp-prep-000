@@ -12,8 +12,8 @@ function setCart(c) {
 function addToCart(itemName) {
   // The item will be an object with a name and a price
   // Generate a random price between 1 and 100
-  randPrice = math.floor(math.random() * 100) + 1;
-  return 
+  itemPrice = math.floor(math.random() * 100) + 1;
+  return { itemName, itemPrice };
 }
 
 function viewCart() {
