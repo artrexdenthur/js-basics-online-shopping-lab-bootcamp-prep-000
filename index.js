@@ -30,12 +30,13 @@ function viewCart() {
     return "Your shopping cart is empty."
   } else {
     statement = statement + `${cart[0].itemName} at $${cart[0].itemPrice}`
-    for(let i = 1; i < cart.length -1; i++) {
-      switch(i):
-      statement = `${statement}, ${cart[i].itemName} at $${cart[1].itemPrice}`
+    for(let i = 1; i < cart.length; i++) {
+      if(i < cart.length) {
+        statement = `${statement}, ${cart[i].itemName} at $${cart[i].itemPrice}`  
+      } else {
+        statement = `${statement}, and ${cart[i].itemName} at $${cart[i].itemPrice}`
+      }
     }
-    
-    
   }
 }
 
