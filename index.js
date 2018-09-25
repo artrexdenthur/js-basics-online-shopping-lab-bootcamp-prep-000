@@ -31,6 +31,7 @@ function viewCart() {
   } else {
     statement = statement + `${cart[0].itemName} at $${cart[0].itemPrice}`
     for(let i = 1; i < cart.length -1; i++) {
+      switch(i):
       statement = `${statement}, ${cart[i].itemName} at $${cart[1].itemPrice}`
     }
     
