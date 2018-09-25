@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(itemName) {
   // The item will be an object with a name and a price
   // Generate a random price between 1 and 100:
-  itemPrice = Math.floor(Math.random() * 100) + 1;
+  let itemPrice = Math.floor(Math.random() * 100) + 1;
   // add the object to the cart
   cart.push( { itemName, itemPrice } );
   // return <itemName> has been added to your cart
