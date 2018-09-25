@@ -52,11 +52,18 @@ function total() {
 
 function removeFromCart(removeName) {
   // write your code here
+  let removed = false;
   for(let item of cart) {
     if(item.itemName === itemName) {
       let index = cart.indexOf(item);
       cart.splice(index, 1);
+      removed = true;
     }
+  }
+  if(removed === false) {
+    return "That item is not in your cart.";
+  } else {
+    return cart;
   }
 }
 
