@@ -72,7 +72,7 @@ function removeFromCart(removeName) {
 function placeOrder(cardNumber) {
   // check for no argument
   if(cardNumber === undefined) {
-    console.log("Sorry, we don't have a credit card on file for you.");
+    return "Sorry, we don't have a credit card on file for you.";
   } else {
     let newTotal = 47;
     cart = [];
