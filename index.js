@@ -71,7 +71,7 @@ function removeFromCart(removeName) {
 
 function placeOrder(cardNumber) {
   // check for no argument
-  if(placeOrder.arguments.length === 0) {
+  if(cardNumber === null) {
     console.log("Sorry, we don't have a credit card on file for you.");
   } else {
     let total = total(cart);
