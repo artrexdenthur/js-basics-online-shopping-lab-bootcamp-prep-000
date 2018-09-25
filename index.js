@@ -37,6 +37,7 @@ function viewCart() {
         statement = `${statement}, and ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
     }
+    return statement;
   }
 }
 
